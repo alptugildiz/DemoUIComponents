@@ -1,0 +1,476 @@
+@import url('https://fonts.googleapis.com/css?family=Inter&display=swap');
+*{
+    font-family: 'Inter',sans-serif;
+}
+
+input[type="search"]::-webkit-search-cancel-button,
+input[type="text"]::-webkit-input-placeholder {
+opacity: 0.5;
+}
+input[type="email"]::-webkit-input-placeholder {
+opacity: 0.5;
+}
+input[type="password"]::-webkit-input-placeholder {
+opacity: 0.5;
+}
+
+input[type="checkbox"]:focus{
+    outline:0;
+}
+input[type="text"], textarea {
+
+  background-color : transparent; 
+  color: #003849;
+}
+input[type="email"], textarea {
+    
+    background-color : transparent; 
+    color: #003849;
+  }
+input[type="password"], textarea {
+
+    background-color : transparent; 
+    color: #003849;
+  }
+
+.hoverButton {
+    font-weight: 600;
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10rem;
+    border: 2px solid;
+    border-color:#0692BC;
+    color: #0692BC;
+    font-size: 1rem;
+    text-align: ce;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.hoverButton:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10rem;
+    border-color:#0692BC;
+    z-index: -2;
+}
+.hoverButton:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #0692BC;
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+}
+.hoverButton:hover {
+    color: #fff;
+}
+.hoverButton:hover:before {
+    width: 100%;
+}
+.signUpButton {
+    font-weight: 600;
+    width: 100%;
+    display: inline-block;
+    padding: 0.75rem 1.25rem;
+    border-radius: 10rem;
+    border: 2px solid;
+    border-color:#0692BC;
+    color: #0692BC;
+    font-size: 1rem;
+    text-align: ce;
+    letter-spacing: 0.15rem;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+}
+.signUpButton:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10rem;
+    border-color:#0692BC;
+    z-index: -2;
+}
+.signUpButton:before {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 0%;
+    height: 100%;
+    background-color: #0692BC;
+    transition: all 0.3s;
+    border-radius: 10rem;
+    z-index: -1;
+}
+.signUpButton:hover {
+    color: #fff;
+}
+.signUpButton:hover:before {
+    width: 100%;
+}
+
+.icon{
+    border:none;
+    margin-top: 5px;
+    margin-right: 10px;
+    color: #0692BC;
+    z-index: 3;
+}
+.icon-password
+{
+    border:none;
+    margin-top: 5px;
+    color: #0692BC;
+    z-index: 3;
+}
+
+.srch{
+    width: fit-content;
+    position: relative;
+    display: flex;
+    padding: 0.5rem 1.25rem;
+    border-radius: 10rem;
+    border: 2px solid;
+    width: 25%;
+    overflow: hidden;
+    border-color:#0692BC;
+    transition: width 2s;
+}
+.search{
+    display: inline-block;
+    border:none;
+    color: #0692BC;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+}
+.search:focus{
+    outline: none;
+}
+.srch:hover{
+width: 50%;
+}
+
+.srch:hover:before{
+    content:'';
+    background-color: #fff;
+    height:50%;
+    width: 150%;
+    top: 10%;
+    left:-20%;
+    position: absolute;
+    background-image: conic-gradient(
+        #0692BC 90deg,
+        transparent 240deg
+    );
+    animation: rotate 3s infinite linear;
+}
+@keyframes rotate {
+    100%{
+        transform :rotate(-360deg);
+    }
+}
+.srch::after{
+    content: '';
+    height: 90%;
+    width: 90%;
+    position: absolute;
+    background-color: white;
+    border-radius: 5rem;
+    top: 5%;
+    left: 5%;
+    display: grid;
+    color:#0692BC;
+}
+
+
+.form{
+    width: fit-content;
+    position: relative;
+    display: flex;
+    float: left;
+    padding: 0.5rem 1.25rem;
+    border-radius: 10rem;
+    border: 2px solid;
+    width: 100%;
+    overflow: hidden;
+    border-color:#0692BC;
+    transition: width 2s;
+}
+
+
+.formAnim{
+    width: fit-content;
+    position: relative;
+    display: flex;
+    padding: 0.5rem 1.25rem;
+    border-radius: 10rem;
+    border: 2px solid;
+    width: 100%;
+    overflow: hidden;
+    border-color:#0692BC;
+    transition: width 2s;
+    background-color: #F4F0F0;
+}
+.formAnim::before{
+    content:'';
+    height:50%;
+    width: 100%;
+    top: 10%;
+    left:0%;
+    position: absolute;
+    background-image: conic-gradient(
+        #2ac0ee 90deg,
+        transparent 240deg
+    );
+    animation: rotate 4s infinite linear;
+}
+
+.formAnim::after{
+    content: '';
+    height: 90%;
+    width: 90%;
+    position: absolute;
+    border-radius: 5rem;
+    top: 5%;
+    left: 5%;
+    display: grid;
+    color:#52d0f7;
+    background-color: #F4F0F0;
+}
+
+
+.frm1{
+    display: inline-block;
+    border:none;
+    color: #0692BC;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+}
+.frm1:focus{
+    outline: none;
+}
+
+
+.frm2{
+    display: inline-block;
+    border:none;
+    color: #0692BC;
+    font-size: 1rem;
+    letter-spacing: 0.15rem;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    width: 100%;
+}
+.frm2:focus{
+    outline: none;
+}
+
+#signup{
+    display:none;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+ul li {
+    list-style: none;
+    margin: 0 5px;
+}
+ul li a {
+    text-decoration: none !important;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    font-size: 25px;
+    color: black;
+    transition: 0.5s;
+}
+ul li a:hover{
+    color: white;
+}
+ul li a::before{
+    content: '';
+    position: absolute;
+    top :0;
+    left:0;
+    right: 0;
+    bottom: 0;
+    background: black;
+    border-radius: 50%;
+    z-index: -1;
+    transform: scale(0);
+    transition: 0.5s;
+}
+ul li a:hover:before{
+    transform: scale(1);
+}
+
+ul li:nth-child(1) a{
+    color: rgb(201, 103, 119);
+}
+ul li:nth-child(1) a:hover{
+    color:white ;
+}
+ul li:nth-child(1) a:hover:before{
+    background: linear-gradient(45deg, #405de6, #5851db, #833ab4, #c13584, #e1306c, #fd1d1d);
+}
+
+ul li:nth-child(2) a{
+    color: #3b5998;
+}
+ul li:nth-child(2) a:hover{
+    color:white ;
+}
+ul li:nth-child(2) a:hover:before{
+    background: #3b5998;
+}
+ul li:nth-child(3) a{
+    color:#1DA1F2;
+}
+ul li:nth-child(3) a:hover{
+    color:white ;
+}
+ul li:nth-child(3) a:hover:before{
+    background: #1DA1F2;
+}
+ul li:nth-child(4) a{
+    color: #E60023;
+}
+ul li:nth-child(4) a:hover{
+    color:white ;
+}
+ul li:nth-child(4) a:hover:before{
+    background:#E60023 ;
+}
+ul li:nth-child(6) a{
+    color: #25D366;
+}
+ul li:nth-child(6) a:hover{
+    color: white;
+}
+ul li:nth-child(6) a:hover:before{
+    background: #25D366;
+}
+ul li:nth-child(7) a{
+    color: #FF0000;
+}
+ul li:nth-child(7) a:hover{
+    color: white;
+}
+ul li:nth-child(7) a:hover:before{
+    background: #FF0000;
+}
+
+
+/* #checkbox{
+   margin: .6em 0;
+   text-decoration: none;
+   background: transparent;
+   background: purple;
+   transform: rotate(45deg); 
+   transition: all ease-out .3s;
+}
+#checkbox:checked ~ #checkbox{
+    transform: rotate(0);
+    background: yellow;
+}
+#checkbox:focus{
+    box-shadow: none;
+    outline: none;
+} */
+.containerforcheck {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 22px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+  
+  .containerforcheck input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+  }
+  
+  .checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    outline: 1px solid #0692BC;
+    border-radius: 20%;
+    transform: rotate(45deg); 
+    transition: all ease-out .3s;
+    background-color: white;
+  }
+  
+  
+  
+  
+  .containerforcheck input:checked ~ .checkmark {
+    transform: rotate(0);
+    background-color: #0692BC;
+  }
+  
+  .checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  .containerforcheck input:checked ~ .checkmark:after {
+    display: block;
+  }
+  
+  .containerforcheck .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
